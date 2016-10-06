@@ -1,6 +1,8 @@
-//Het liedje dat je gaat irriteren
+//Het liedje dat je gaat irriteren.
 
 void setup()
+
+
 {
   
   
@@ -11,14 +13,17 @@ void setup()
 
 
 void draw()
+
+
 {
   
     
   stroke(255,255,255);
   background(255,155,0);
   fill(0,0,0);
-  text("De bol is een aanwijzer", 10,10);
-  text("Het liedje dat je gaat irriteren.", 470,100);
+  text("De bol is een aanwijzer", 923,100);
+  text("Het liedje dat je gaat irriteren.", 480,100);
+  text("Een leuk lied.", 100,100);
   text("Dit is een liedje, en dat gaat je irriteren." ,10,200);  
   text("Dit is een liedje, en dat gaat je irriteren." ,10,225);
   text("Dit is een liedje, en dat gaat je irriteren." ,10,250);
@@ -81,9 +86,9 @@ void draw()
   text("Dit is een liedje, en dat gaat je irriteren." ,900,600);
   text("Dit is een liedje, en dat gaat je irriteren." ,900,625);
   text("Dit is een liedje, en dat gaat je irriteren." ,900,650);
-  text("Dit is een liedje, en dat gaat je irriteren." ,900,675);
-  text("Dit is een liedje, was behoorlijk irritant,he." ,900,700);
-  ellipse(mouseX,mouseY,25,25);
+  text("Dit is een liedje, was behoorlijk irritant,he." ,900,675);
+  text("Einde." ,900,700);
+  ellipse(mouseX,mouseY,25,25); 
 
 
 }
