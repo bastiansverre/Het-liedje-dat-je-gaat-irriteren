@@ -1,9 +1,10 @@
+//Het liedje dat je gaat irriteren
+
 void setup()
 {
   
   
   size(1200,740,P3D);
-  background(255,155,0);
   
   
 }
@@ -13,7 +14,10 @@ void draw()
 {
   
     
+  stroke(255,255,255);
+  background(255,155,0);
   fill(0,0,0);
+  text("De bol is een aanwijzer", 10,10);
   text("Het liedje dat je gaat irriteren.", 470,100);
   text("Dit is een liedje, en dat gaat je irriteren." ,10,200);  
   text("Dit is een liedje, en dat gaat je irriteren." ,10,225);
@@ -78,7 +82,8 @@ void draw()
   text("Dit is een liedje, en dat gaat je irriteren." ,900,625);
   text("Dit is een liedje, en dat gaat je irriteren." ,900,650);
   text("Dit is een liedje, en dat gaat je irriteren." ,900,675);
-  text("Dit is een liedje, was behoorlijk irritant." ,900,700);
+  text("Dit is een liedje, was behoorlijk irritant,he." ,900,700);
+  ellipse(mouseX,mouseY,25,25);
 
 
 }
