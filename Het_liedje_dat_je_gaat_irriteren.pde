@@ -1,12 +1,32 @@
 //Het liedje dat je gaat irriteren.
 
+final int aantal_punten = 100;
+float[] xs;
+float[] ys;
+
+float x = 300;
+float y = 50;
+float dx = 4;
+float dy = 0;
+float g = 0.1;
+
+
 void setup()
 
 
 {
   
   
-  size(1200,740,P3D);
+ xs = new float[aantal_punten];
+  ys = new float[aantal_punten];
+  for (int i=0; i!=aantal_punten; ++i)
+  {
+    xs[i] = 800;
+    ys[i] = 400;
+  }
+  
+  
+  size(1400,730,P3D);
   
   
 }
@@ -20,6 +40,38 @@ void draw()
     
   stroke(255,255,255);
   background(255,155,0);
+  
+  
+  ellipse(x,y,100,100);
+  fill(255,255,255);
+  ellipse(x,y,75,75);
+  fill(255,0,0);
+  ellipse(x,y,50,50);
+  fill(0,255,0);
+  ellipse(x,y,25,25);
+  fill(0,0,255);
+  ellipse(x,y,12,12);
+  x = x + dx;
+  y = y + dy;
+  dy = dy + g;
+  if (x > 1350 || x < 50)
+  {
+    dx = -dx;
+  }
+  if (y > 680)
+  {
+    dy = -dy;
+}
+
+   for (int i=0; i!=aantal_punten; ++i)
+  {
+    xs[i] += random(-1,1);
+    ys[i] += random(-1,1);
+    ellipse(xs[i], ys[i], 10, 10);
+  }
+  
+  fill(255,0,0);
+  rect(1160,40,170,705);
   fill(0,0,0);
   text("De bol is een aanwijzer", 923,100);
   text("Het liedje dat je gaat irriteren.", 480,100);
