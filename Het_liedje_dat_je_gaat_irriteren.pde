@@ -1,6 +1,6 @@
 //Het liedje dat je gaat irriteren.
 
-final int aantal_punten = 100;
+final int aantal_punten = 2000;
 float[] xs;
 float[] ys;
 
@@ -70,10 +70,10 @@ void draw()
     ellipse(xs[i], ys[i], 10, 10);
   }
   
-  fill(255,0,0);
+  fill(155,155,155);
   rect(1160,40,170,705);
   fill(0,0,0);
-  text("De bol is een aanwijzer", 923,100);
+  text("De (kleine) bol is een aanwijzer", 923,100);
   text("Het liedje dat je gaat irriteren.", 480,100);
   text("Een leuk lied.", 100,100);
   text("Dit is een liedje, en dat gaat je irriteren." ,10,200);  
