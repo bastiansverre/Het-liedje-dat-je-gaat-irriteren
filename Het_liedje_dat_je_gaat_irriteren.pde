@@ -1,4 +1,10 @@
+//leuk//
+
+//En dan komt nu//
+
+
 //Het liedje dat je gaat irriteren.//
+
 
 final int aantal_punten = 2000;
 float[] xs;
@@ -41,6 +47,7 @@ void draw()
   stroke(255,255,255);
   background(255,155,0);
   
+  line(0,10,1400,10);
   
   ellipse(x,y,100,100);
   fill(255,255,255);
@@ -51,6 +58,10 @@ void draw()
   ellipse(x,y,25,25);
   fill(0,0,255);
   ellipse(x,y,12,12);
+  fill(0,255,255);
+  ellipse(x,y,4,4);
+  
+  fill(111,1,56);
   x = x + dx;
   y = y + dy;
   dy = dy + g;
@@ -61,7 +72,7 @@ void draw()
   if (y > 680)
   {
     dy = -dy;
-}
+  }
 
    for (int i=0; i!=aantal_punten; ++i)
   {
@@ -73,6 +84,11 @@ void draw()
   fill(155,155,25);
   rect(1160,40,170,705);
   fill(0,0,0);
+  
+  
+  //text//
+  
+  
   text("De (kleine) bol is een aanwijzer.", 923,100);
   text("Het liedje dat je gaat irriteren.", 480,100);
   text("Een leuk lied.", 100,100);
@@ -140,11 +156,16 @@ void draw()
   text("Dit is een liedje, en dat gaat je irriteren." ,900,650);
   text("x10" ,900,675);
   text("Dit is een liedje, was behoorlijk irritant,he." ,900,700);  
+  
+  
+  //einde text//
+  
+  
   ellipse(mouseX,mouseY,25,25); 
-  line(300,30,300,670);
-  line(330,30,330,670);
-  line(360,30,360,670);
-  line(390,30,390,670);
+  line(300,10,300,700);
+  line(330,10,330,700);
+  line(360,10,360,700);
+  line(390,10,390,700);
   
 
 }
